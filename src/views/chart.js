@@ -30,6 +30,12 @@ const initialColaborators = JSON.parse(
 );
 
 function ChartView() {
+  const [colaborators, setColaborators] = React.useState(initialColaborators);
+
+  React.useEffect(() => {
+    localStorage.setItem("colaborators", JSON.stringify(colaborators));
+  }, [colaborators]);
+
   return <div>ChartView</div>;
 }
 
