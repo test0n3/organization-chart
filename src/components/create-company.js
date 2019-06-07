@@ -1,11 +1,14 @@
-/** @jsx jsx */
-import React from "react";
-import { jsx } from "@emotion/core";
+import React from 'react';
+import InputCompanyName from './input-company';
 
-function CreateCompany(){
-  return(
-    <h1>Hello</h1>
+function CompanyName() {
+  const [CompanyName, setCompanyName] = React.useState('');
+
+  return (
+    <div>
+      <InputCompanyName CompanyName={CompanyName} setCompanyName={setCompanyName} />
+    </div>
   );
 }
 
-export default CreateCompany;
+export default CompanyName;
