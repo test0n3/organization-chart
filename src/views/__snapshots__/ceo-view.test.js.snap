@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CeoName component 1`] = `
+<DocumentFragment>
+  <div>
+    <div>
+      <form>
+        <input
+          name="ceo"
+          placeholder="Ceo's name..."
+          type="text"
+        />
+      </form>
+    </div>
+  </div>
+</DocumentFragment>
+`;
