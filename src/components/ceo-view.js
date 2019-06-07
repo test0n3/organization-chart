@@ -6,7 +6,11 @@ function CeoName() {
 
   return (
     <div>
-      <InputNameCeo nameCeo={nameCeo} setNameCeo={setNameCeo} />
+      {nameCeo ? (
+        <div>{ nameCeo }</div>
+      ) : (
+        <InputNameCeo nameCeo={nameCeo} setNameCeo={setNameCeo} />
+      )}
     </div>
   );
 }

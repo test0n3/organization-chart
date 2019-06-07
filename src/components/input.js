@@ -6,6 +6,7 @@ function InputNameCeo(props) {
     props.setNameCeo(event.target.elements.ceo.value);
   }
   return (
+  <div>
     <form onSubmit={handleTextChange}>
       <input
         name="ceo"
@@ -13,6 +14,7 @@ function InputNameCeo(props) {
         placeholder="Ceo's name..."
       />
     </form>
+    </div>  
   );
 }
 
