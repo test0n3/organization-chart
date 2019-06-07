@@ -31,8 +31,6 @@ Create a **Organization Chart** application using _React_.
 - Ricardo Yrupailla
 - Diego Cuevas
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
 ## Installation
 
 ```
@@ -92,3 +90,9 @@ yarn start
   children: [number, number, ...],
 }
 ```
+- **id**: unique number that identifies the collaborator,
+- **name**: *user's input*, collaborator's name,
+- **position**: *user's input*, collaborator's position,
+- **parent**: *id* that identifies the inmediate *parent*,
+- **children**: array that gathers the *children*
+
