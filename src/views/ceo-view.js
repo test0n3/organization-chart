@@ -1,5 +1,5 @@
 import React from 'react';
-import InputNameCeo from './input';
+import InputNameCeo from '../components/input';
 
 function CeoName() {
   const [nameCeo, setNameCeo] = React.useState('');
