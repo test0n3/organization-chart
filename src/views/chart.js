@@ -10,7 +10,7 @@ const initialColaborators = JSON.parse(
         name: "Carlos Ayala",
         position: "CEO",
         parent: "",
-        children: []
+        children: [1, 2]
       },
       {
         id: 1,
