@@ -1,7 +1,7 @@
 import React from 'react';
 import { render } from 'react-dom';
-import App from './app'
+import CeoName from './views/ceo-view';
 
 const $root = document.getElementById('root');
 
-render(<App />, $root);
+render(<CeoName />, $root);
