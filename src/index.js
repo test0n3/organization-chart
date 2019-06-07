@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from 'react-dom';
-import CompanyName from './components/create-company';
+import CompanyName from './views/create-company';
 import Chart from './views/chart';
 
 function App() {
@@ -13,7 +13,7 @@ function App() {
     setCompanyName(value);
   }
   if (!companyName) {
-    return <CompanyName />;
+    return <CompanyName onCompany={handleCompanyName}/>;
   } // return formCompany }
   return <Chart />;
 }
