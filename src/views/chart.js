@@ -1,6 +1,73 @@
 /** @jsx jsx */
 import React from "react";
 import { jsx } from "@emotion/core";
+import Collaborator from "../components/collaborator";
+
+const testData = [
+  {
+    id: 1,
+    name: "Mayra",
+    name: "Mayra Navarro",
+    position: "Product Manager",
+    parent: 0,
+    children: []
+  },
+  {
+    id: 2,
+    name: "Deivy Conde",
+    position: "Tech Lead",
+    parent: 0,
+    children: [7, 8]
+  },
+  {
+    id: 3,
+    name: "xyz",
+    name: "Ricardo Yrupailla",
+    position: "Tech Lead",
+    parent: 0,
+    children: [4]
+  },
+  {
+    id: 4,
+    name: "xyz",
+    name: "Diego Cuevas",
+    position: "Tech Lead",
+    parent: 3,
+    children: [5, 6]
+  },
+  {
+    id: 5,
+    name: "xyz",
+    name: "Christopher Roa",
+    position: "Tech Lead",
+    parent: 4,
+    children: []
+  },
+  {
+    id: 6,
+    name: "xyz",
+    name: "Frank Condezo",
+    position: "Tech Lead",
+    parent: 4,
+    children: []
+  },
+  {
+    id: 7,
+    name: "xyz",
+    name: "Cristian Granda",
+    position: "Tech Lead",
+    parent: 2,
+    children: []
+  },
+  {
+    id: 8,
+    name: "xyz",
+    name: "Cesar Cachay",
+    position: "Tech Lead",
+    parent: 2,
+    children: []
+  }
+];
 
 function ChartView({ ceoName, companyName }) {
   const [collaborators, setCollaborators] = React.useState([
@@ -9,8 +76,9 @@ function ChartView({ ceoName, companyName }) {
       name: ceoName,
       position: "CEO",
       parent: "",
-      children: []
-    }
+      children: [1, 2, 3]
+    },
+    ...testData
   ]);
 
   React.useEffect(() => {
@@ -26,18 +94,7 @@ function ChartView({ ceoName, companyName }) {
           alignItems: "center"
         }}
       >
-        <div
-          css={{
-            backgroundColor: "peru",
-            margin: "10px",
-            width: "80px",
-            height: "80px"
-          }}
-        >
-          {collaborators[id].parent}
-          {collaborators[id].id} <br />
-          {collaborators[id].name}
-        </div>
+        <Collaborator collaborator={collaborators[id]} />
 
         <div
           css={{
