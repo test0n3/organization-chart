@@ -1,7 +1,24 @@
 import React from 'react';
 import { render } from 'react-dom';
+import CompanyName from './views/create-company';
+import Chart from './views/chart';
 import CeoName from './views/ceo-view';
 
-const $root = document.getElementById('root');
+function App() {
+  const [companyName, setCompanyName] = React.useState(
+    localStorage.getItem('companyName')
+  );
 
-render(<CeoName />, $root);
+  function handleCompanyName(value) {
+    localStorage.setItem('companyName', value);
+    setCompanyName(value);
+  }
+  if (!companyName) {
+    return <CompanyName onCompany={handleCompanyName}/>;
+  } else {
+    return <Chart />;
+  }
+}
+
+const $root = document.getElementById('root');
+render(<App />, $root);
