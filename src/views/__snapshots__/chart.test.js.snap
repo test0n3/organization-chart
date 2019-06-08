@@ -6,22 +6,56 @@ exports[`ChartView component 1`] = `
     <section
       class="css-dvxtzn"
     >
-      <div
-        class="css-rcxkfs"
+      <article
+        class="css-5c5px"
       >
-        0
-      </div>
+        <p
+          class="css-1kebmcj"
+        />
+        <p
+          class="css-197a6t6"
+        >
+          CEO
+        </p>
+        <p
+          class="css-ub9u27"
+        >
+          <button
+            class="css-1b02a2r-InputCollaborator"
+          >
+            +
+          </button>
+        </p>
+      </article>
       <div
         class="css-p58oka"
       >
         <section
           class="css-dvxtzn"
         >
-          <div
-            class="css-rcxkfs"
+          <article
+            class="css-5c5px"
           >
-            01
-          </div>
+            <p
+              class="css-1kebmcj"
+            >
+              Mayra Navarro
+            </p>
+            <p
+              class="css-197a6t6"
+            >
+              Product Manager
+            </p>
+            <p
+              class="css-ub9u27"
+            >
+              <button
+                class="css-1b02a2r-InputCollaborator"
+              >
+                +
+              </button>
+            </p>
+          </article>
           <div
             class="css-p58oka"
           />
@@ -29,22 +63,58 @@ exports[`ChartView component 1`] = `
         <section
           class="css-dvxtzn"
         >
-          <div
-            class="css-rcxkfs"
+          <article
+            class="css-5c5px"
           >
-            02
-          </div>
+            <p
+              class="css-1kebmcj"
+            >
+              Deivy Conde
+            </p>
+            <p
+              class="css-197a6t6"
+            >
+              Tech Lead
+            </p>
+            <p
+              class="css-ub9u27"
+            >
+              <button
+                class="css-1b02a2r-InputCollaborator"
+              >
+                +
+              </button>
+            </p>
+          </article>
           <div
             class="css-p58oka"
           >
             <section
               class="css-dvxtzn"
             >
-              <div
-                class="css-rcxkfs"
+              <article
+                class="css-5c5px"
               >
-                27
-              </div>
+                <p
+                  class="css-1kebmcj"
+                >
+                  Cristian Granda
+                </p>
+                <p
+                  class="css-197a6t6"
+                >
+                  Tech Lead
+                </p>
+                <p
+                  class="css-ub9u27"
+                >
+                  <button
+                    class="css-1b02a2r-InputCollaborator"
+                  >
+                    +
+                  </button>
+                </p>
+              </article>
               <div
                 class="css-p58oka"
               />
@@ -52,11 +122,29 @@ exports[`ChartView component 1`] = `
             <section
               class="css-dvxtzn"
             >
-              <div
-                class="css-rcxkfs"
+              <article
+                class="css-5c5px"
               >
-                28
-              </div>
+                <p
+                  class="css-1kebmcj"
+                >
+                  Cesar Cachay
+                </p>
+                <p
+                  class="css-197a6t6"
+                >
+                  Tech Lead
+                </p>
+                <p
+                  class="css-ub9u27"
+                >
+                  <button
+                    class="css-1b02a2r-InputCollaborator"
+                  >
+                    +
+                  </button>
+                </p>
+              </article>
               <div
                 class="css-p58oka"
               />
@@ -66,33 +154,87 @@ exports[`ChartView component 1`] = `
         <section
           class="css-dvxtzn"
         >
-          <div
-            class="css-rcxkfs"
+          <article
+            class="css-5c5px"
           >
-            03
-          </div>
+            <p
+              class="css-1kebmcj"
+            >
+              Ricardo Yrupailla
+            </p>
+            <p
+              class="css-197a6t6"
+            >
+              Tech Lead
+            </p>
+            <p
+              class="css-ub9u27"
+            >
+              <button
+                class="css-1b02a2r-InputCollaborator"
+              >
+                +
+              </button>
+            </p>
+          </article>
           <div
             class="css-p58oka"
           >
             <section
               class="css-dvxtzn"
             >
-              <div
-                class="css-rcxkfs"
+              <article
+                class="css-5c5px"
               >
-                34
-              </div>
+                <p
+                  class="css-1kebmcj"
+                >
+                  Diego Cuevas
+                </p>
+                <p
+                  class="css-197a6t6"
+                >
+                  Tech Lead
+                </p>
+                <p
+                  class="css-ub9u27"
+                >
+                  <button
+                    class="css-1b02a2r-InputCollaborator"
+                  >
+                    +
+                  </button>
+                </p>
+              </article>
               <div
                 class="css-p58oka"
               >
                 <section
                   class="css-dvxtzn"
                 >
-                  <div
-                    class="css-rcxkfs"
+                  <article
+                    class="css-5c5px"
                   >
-                    45
-                  </div>
+                    <p
+                      class="css-1kebmcj"
+                    >
+                      Christopher Roa
+                    </p>
+                    <p
+                      class="css-197a6t6"
+                    >
+                      Tech Lead
+                    </p>
+                    <p
+                      class="css-ub9u27"
+                    >
+                      <button
+                        class="css-1b02a2r-InputCollaborator"
+                      >
+                        +
+                      </button>
+                    </p>
+                  </article>
                   <div
                     class="css-p58oka"
                   />
@@ -100,11 +242,29 @@ exports[`ChartView component 1`] = `
                 <section
                   class="css-dvxtzn"
                 >
-                  <div
-                    class="css-rcxkfs"
+                  <article
+                    class="css-5c5px"
                   >
-                    46
-                  </div>
+                    <p
+                      class="css-1kebmcj"
+                    >
+                      Frank Condezo
+                    </p>
+                    <p
+                      class="css-197a6t6"
+                    >
+                      Tech Lead
+                    </p>
+                    <p
+                      class="css-ub9u27"
+                    >
+                      <button
+                        class="css-1b02a2r-InputCollaborator"
+                      >
+                        +
+                      </button>
+                    </p>
+                  </article>
                   <div
                     class="css-p58oka"
                   />
