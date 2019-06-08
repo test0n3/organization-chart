@@ -3,7 +3,7 @@ import React from 'react';
 function InputNameCeo(props) {
   function handleTextChange(event) {
     event.preventDefault();
-    props.setNameCeo(event.target.elements.ceo.value);
+    props.onCeo(event.target.elements.ceo.value);
   }
   return (
   <div>

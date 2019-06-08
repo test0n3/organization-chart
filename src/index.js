@@ -13,8 +13,20 @@ function App() {
     localStorage.setItem('companyName', value);
     setCompanyName(value);
   }
+
+  const [nameCeo, setNameCeo] = React.useState(
+    localStorage.getItem('nameCeo')
+  );
+
+  function handleNameCeo(value) {
+    localStorage.setItem('nameCeo', value);
+    setNameCeo(value);
+  }
+
   if (!companyName) {
     return <CompanyName onCompany={handleCompanyName}/>;
+  } else if(!nameCeo) {
+    return <CeoName onCeo={handleNameCeo}/>
   } else {
     return <Chart />;
   }
