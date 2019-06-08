@@ -26,7 +26,7 @@ function App() {
   } else if (!nameCeo) {
     return <CeoName onCeo={handleNameCeo} />;
   } else {
-    return <ChartView />;
+    return <ChartView ceoName={nameCeo} companyName={companyName} />;
   }
 }
 

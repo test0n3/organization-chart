@@ -2,82 +2,30 @@
 import React from "react";
 import { jsx } from "@emotion/core";
 
-const initialColaborators = JSON.parse(
-  localStorage.getItem("colaborators") ||
+const initialCollaborators = JSON.parse(
+  localStorage.getItem("collaborators") ||
     JSON.stringify([
       {
         id: 0,
-        name: "Carlos Ayala",
+        name: "",
         position: "CEO",
         parent: "",
-        children: [1, 2, 3]
-      },
-      {
-        id: 1,
-        name: "Mayra",
-        position: "Product Manager",
-        parent: 0,
-        children: []
-      },
-      {
-        id: 2,
-        name: "Deivy Conde",
-        position: "Tech Lead",
-        parent: 0,
-        children: [7, 8]
-      },
-      {
-        id: 3,
-        name: "xyz",
-        position: "Tech Lead",
-        parent: 0,
-        children: [4]
-      },
-      {
-        id: 4,
-        name: "xyz",
-        position: "Tech Lead",
-        parent: 3,
-        children: [5, 6]
-      },
-      {
-        id: 5,
-        name: "xyz",
-        position: "Tech Lead",
-        parent: 4,
-        children: []
-      },
-      {
-        id: 6,
-        name: "xyz",
-        position: "Tech Lead",
-        parent: 4,
-        children: []
-      },
-      {
-        id: 7,
-        name: "xyz",
-        position: "Tech Lead",
-        parent: 2,
-        children: []
-      },
-      {
-        id: 8,
-        name: "xyz",
-        position: "Tech Lead",
-        parent: 2,
         children: []
       }
     ])
 );
 
-function ChartView() {
-  const [colaborators, setColaborators] = React.useState(initialColaborators);
+function ChartView({ ceoName, companyName }) {
+  const [collaborators, setCollaborators] = React.useState(prevState => {
+    if (initialCollaborators[0].name === "")
+      initialCollaborators[0].name = ceoName;
+    return initialCollaborators;
+  });
 
   React.useEffect(() => {
-    localStorage.setItem("colaborators", JSON.stringify(colaborators));
-    console.log(colaborators);
-  }, [colaborators]);
+    localStorage.setItem("collaborators", JSON.stringify(collaborators));
+    console.log(collaborators);
+  }, [collaborators]);
 
   function renderChildren(id) {
     return (
@@ -96,8 +44,8 @@ function ChartView() {
             height: "80px"
           }}
         >
-          {colaborators[id].parent}
-          {colaborators[id].id}
+          {collaborators[id].parent}
+          {collaborators[id].id}
         </div>
 
         <div
@@ -107,7 +55,7 @@ function ChartView() {
             flexWrap: "wrap"
           }}
         >
-          {colaborators[id].children.map(childId => renderChildren(childId))}
+          {collaborators[id].children.map(childId => renderChildren(childId))}
         </div>
       </section>
     );
