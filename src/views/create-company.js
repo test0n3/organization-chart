@@ -7,9 +7,18 @@ function CompanyName({ onCompany }) {
   return (
     <div
     css={{
-            display: "flex",
-            flexDirection: "column"
-          }}
+      minHeight: "100vh",
+      margin: "0 0 0 0",
+      display: "flex",
+      backgroundPosition: "center",
+      backgroundSize: "cover",
+      alignItems: "center",
+      justifyContent: "center",
+      fontFamily: "Noto Sans",
+      backgroundColor: "rgba(0, 0, 0, 0.5)",
+      backgroundBlendMode: "overlay",
+      backgroundRepeat: "no-repeat"
+      }}
     >
       <InputCompanyName setCompanyName={onCompany} />
     </div>
