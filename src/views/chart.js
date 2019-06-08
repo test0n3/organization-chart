@@ -2,29 +2,19 @@
 import React from "react";
 import { jsx } from "@emotion/core";
 
-const initialCollaborators = JSON.parse(
-  localStorage.getItem("collaborators") ||
-    JSON.stringify([
-      {
-        id: 0,
-        name: "",
-        position: "CEO",
-        parent: "",
-        children: []
-      }
-    ])
-);
-
 function ChartView({ ceoName, companyName }) {
-  const [collaborators, setCollaborators] = React.useState(prevState => {
-    if (initialCollaborators[0].name === "")
-      initialCollaborators[0].name = ceoName;
-    return initialCollaborators;
-  });
+  const [collaborators, setCollaborators] = React.useState([
+    {
+      id: 0,
+      name: ceoName,
+      position: "CEO",
+      parent: "",
+      children: []
+    }
+  ]);
 
   React.useEffect(() => {
     localStorage.setItem("collaborators", JSON.stringify(collaborators));
-    console.log(collaborators);
   }, [collaborators]);
 
   function renderChildren(id) {
