@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 function InputNameCeo(props) {
   function handleTextChange(event) {
@@ -6,15 +6,11 @@ function InputNameCeo(props) {
     props.onCeo(event.target.elements.ceo.value);
   }
   return (
-  <div>
-    <form onSubmit={handleTextChange}>
-      <input
-        name="ceo"
-        type="text"
-        placeholder="Ceo's name..."
-      />
-    </form>
-    </div>  
+    <div>
+      <form onSubmit={handleTextChange}>
+        <input name="ceo" type="text" placeholder="Ceo's name..." required />
+      </form>
+    </div>
   );
 }
 

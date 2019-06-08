@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 function InputCompanyName(props) {
   function handleTextChange(event) {
@@ -11,6 +11,7 @@ function InputCompanyName(props) {
         name="company"
         type="text"
         placeholder="Company's name..."
+        required
       />
     </form>
   );
