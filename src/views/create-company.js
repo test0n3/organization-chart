@@ -2,6 +2,7 @@
 import React from 'react';
 import { jsx } from "@emotion/core";
 import InputCompanyName from '../components/input-company';
+import Background from '../assets/giphy3.gif';
 
 function CompanyName({ onCompany }) {
   return (
@@ -15,7 +16,7 @@ function CompanyName({ onCompany }) {
       alignItems: "center",
       justifyContent: "center",
       fontFamily: "Noto Sans",
-      backgroundColor: "rgba(0, 0, 0, 0.5)",
+      backgroundImage: `url(${Background})`,
       backgroundBlendMode: "overlay",
       backgroundRepeat: "no-repeat"
       }}
