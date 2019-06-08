@@ -2,6 +2,7 @@ import React from 'react';
 import { render } from 'react-dom';
 import CompanyName from './views/create-company';
 import Chart from './views/chart';
+import CeoName from './views/ceo-view';
 
 function App() {
   const [companyName, setCompanyName] = React.useState(
