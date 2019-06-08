@@ -2,9 +2,7 @@
 
 exports[`Create Company component 1`] = `
 <DocumentFragment>
-  <div
-    css="[object Object]"
-  >
+  <div>
     <form>
       <input
         name="company"
