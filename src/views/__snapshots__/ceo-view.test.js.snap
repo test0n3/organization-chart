@@ -2,12 +2,17 @@
 
 exports[`CeoName component 1`] = `
 <DocumentFragment>
-  <div>
+  <div
+    class="css-1tgedd4-CeoName"
+  >
     <div>
-      <form>
+      <form
+        class="css-xctk3t-InputNameCeo"
+      >
         <input
+          class="css-lrjsfw-InputNameCeo"
           name="ceo"
-          placeholder="Ceo's name..."
+          placeholder="Ceo's Name"
           type="text"
         />
       </form>

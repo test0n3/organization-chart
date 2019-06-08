@@ -14,19 +14,19 @@ function App() {
     setCompanyName(value);
   }
 
-  const [nameCeo, setNameCeo] = React.useState(localStorage.getItem("nameCeo"));
+  const [ceoName, setCeoName] = React.useState(localStorage.getItem("ceoName"));
 
-  function handleNameCeo(value) {
-    localStorage.setItem("nameCeo", value);
-    setNameCeo(value);
+  function handleCeoName(value) {
+    localStorage.setItem("ceoName", value);
+    setCeoName(value);
   }
 
   if (!companyName) {
     return <CompanyName onCompany={handleCompanyName} />;
-  } else if (!nameCeo) {
-    return <CeoName onCeo={handleNameCeo} />;
+  } else if (!ceoName) {
+    return <CeoName onCeo={handleCeoName} />;
   } else {
-    return <ChartView />;
+    return <ChartView ceoName={ceoName} companyName={companyName} />;
   }
 }
 

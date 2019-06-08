@@ -3,82 +3,80 @@ import React from "react";
 import { jsx } from "@emotion/core";
 import Collaborator from "../components/collaborator";
 
-const initialColaborators = JSON.parse(
-  localStorage.getItem("colaborators") ||
-    JSON.stringify([
-      {
-        id: 0,
-        name: "Carlos Ayala",
-        position: "CEO",
-        parent: "",
-        children: [1, 2, 3]
-      },
-      {
-        id: 1,
-        name: "Mayra Navarro",
-        position: "Product Manager",
-        parent: 0,
-        children: []
-      },
-      {
-        id: 2,
-        name: "Deivy Conde",
-        position: "Tech Lead",
-        parent: 0,
-        children: [7, 8]
-      },
-      {
-        id: 3,
-        name: "Ricardo Yrupailla",
-        position: "Tech Lead",
-        parent: 0,
-        children: [4]
-      },
-      {
-        id: 4,
-        name: "Diego Cuevas",
-        position: "Tech Lead",
-        parent: 3,
-        children: [5, 6]
-      },
-      {
-        id: 5,
-        name: "Christopher Roa",
-        position: "Tech Lead",
-        parent: 4,
-        children: []
-      },
-      {
-        id: 6,
-        name: "Frank Condezo",
-        position: "Tech Lead",
-        parent: 4,
-        children: []
-      },
-      {
-        id: 7,
-        name: "Cristian Granda",
-        position: "Tech Lead",
-        parent: 2,
-        children: []
-      },
-      {
-        id: 8,
-        name: "Cesar Cachay",
-        position: "Tech Lead",
-        parent: 2,
-        children: []
-      }
-    ])
-);
+const testData = [
+  {
+    id: 1,
+    name: "Mayra Navarro",
+    position: "Product Manager",
+    parent: 0,
+    children: []
+  },
+  {
+    id: 2,
+    name: "Deivy Conde",
+    position: "Tech Lead",
+    parent: 0,
+    children: [7, 8]
+  },
+  {
+    id: 3,
+    name: "Ricardo Yrupailla",
+    position: "Tech Lead",
+    parent: 0,
+    children: [4]
+  },
+  {
+    id: 4,
+    name: "Diego Cuevas",
+    position: "Tech Lead",
+    parent: 3,
+    children: [5, 6]
+  },
+  {
+    id: 5,
+    name: "Christopher Roa",
+    position: "Tech Lead",
+    parent: 4,
+    children: []
+  },
+  {
+    id: 6,
+    name: "Frank Condezo",
+    position: "Tech Lead",
+    parent: 4,
+    children: []
+  },
+  {
+    id: 7,
+    name: "Cristian Granda",
+    position: "Tech Lead",
+    parent: 2,
+    children: []
+  },
+  {
+    id: 8,
+    name: "Cesar Cachay",
+    position: "Tech Lead",
+    parent: 2,
+    children: []
+  }
+];
 
-function ChartView() {
-  const [colaborators, setColaborators] = React.useState(initialColaborators);
+function ChartView({ ceoName, companyName }) {
+  const [collaborators, setCollaborators] = React.useState([
+    {
+      id: 0,
+      name: ceoName,
+      position: "CEO",
+      parent: "",
+      children: [1, 2, 3]
+    },
+    ...testData
+  ]);
 
   React.useEffect(() => {
-    localStorage.setItem("colaborators", JSON.stringify(colaborators));
-    console.log(colaborators);
-  }, [colaborators]);
+    localStorage.setItem("collaborators", JSON.stringify(collaborators));
+  }, [collaborators]);
 
   function renderChildren(id) {
     return (
@@ -89,7 +87,7 @@ function ChartView() {
           alignItems: "center"
         }}
       >
-        <Collaborator collaborator={colaborators[id]} />
+        <Collaborator collaborator={collaborators[id]} />
 
         <div
           css={{
@@ -98,7 +96,7 @@ function ChartView() {
             flexWrap: "wrap"
           }}
         >
-          {colaborators[id].children.map(childId => renderChildren(childId))}
+          {collaborators[id].children.map(childId => renderChildren(childId))}
         </div>
       </section>
     );
