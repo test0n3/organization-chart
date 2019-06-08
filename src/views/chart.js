@@ -1,6 +1,7 @@
 /** @jsx jsx */
 import React from "react";
 import { jsx } from "@emotion/core";
+import Collaborator from "../components/collaborator";
 
 const initialColaborators = JSON.parse(
   localStorage.getItem("colaborators") ||
@@ -14,7 +15,7 @@ const initialColaborators = JSON.parse(
       },
       {
         id: 1,
-        name: "Mayra",
+        name: "Mayra Navarro",
         position: "Product Manager",
         parent: 0,
         children: []
@@ -28,42 +29,42 @@ const initialColaborators = JSON.parse(
       },
       {
         id: 3,
-        name: "xyz",
+        name: "Ricardo Yrupailla",
         position: "Tech Lead",
         parent: 0,
         children: [4]
       },
       {
         id: 4,
-        name: "xyz",
+        name: "Diego Cuevas",
         position: "Tech Lead",
         parent: 3,
         children: [5, 6]
       },
       {
         id: 5,
-        name: "xyz",
+        name: "Christopher Roa",
         position: "Tech Lead",
         parent: 4,
         children: []
       },
       {
         id: 6,
-        name: "xyz",
+        name: "Frank Condezo",
         position: "Tech Lead",
         parent: 4,
         children: []
       },
       {
         id: 7,
-        name: "xyz",
+        name: "Cristian Granda",
         position: "Tech Lead",
         parent: 2,
         children: []
       },
       {
         id: 8,
-        name: "xyz",
+        name: "Cesar Cachay",
         position: "Tech Lead",
         parent: 2,
         children: []
@@ -88,17 +89,7 @@ function ChartView() {
           alignItems: "center"
         }}
       >
-        <div
-          css={{
-            backgroundColor: "peru",
-            margin: "10px",
-            width: "80px",
-            height: "80px"
-          }}
-        >
-          {colaborators[id].parent}
-          {colaborators[id].id}
-        </div>
+        <Collaborator collaborator={colaborators[id]} />
 
         <div
           css={{
