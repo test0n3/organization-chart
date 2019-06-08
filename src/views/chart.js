@@ -63,31 +63,51 @@ const testData = [
 ];
 
 function ChartView({ ceoName, companyName }) {
-  const [collaborators, setCollaborators] = React.useState([
-    {
-      id: 0,
-      name: ceoName,
-      position: "CEO",
-      parent: "",
-      children: [1, 2, 3]
-    },
-    ...testData
-  ]);
+  const initialCollaborators = JSON.parse(
+    localStorage.getItem("collaborators") ||
+      JSON.stringify([
+        {
+          id: 0,
+          name: ceoName,
+          position: "CEO",
+          parent: "",
+          children: [1, 2, 3]
+        },
+        ...testData
+      ])
+  );
+
+  const [collaborators, setCollaborators] = React.useState(
+    initialCollaborators
+  );
 
   React.useEffect(() => {
     localStorage.setItem("collaborators", JSON.stringify(collaborators));
   }, [collaborators]);
 
+  function addCollaborator(collaboratorData) {
+    setCollaborators(state => {
+      state[collaboratorData.parent].children.push(state.length);
+      state[state.length - 1].id = state.length - 1;
+      return [...state, collaboratorData];
+    });
+    localStorage.setItem("collaborators", JSON.stringify(collaborators));
+  }
+
   function renderChildren(id) {
     return (
-      <section
+      <div
+        key={id}
         css={{
           display: "flex",
           flexDirection: "column",
           alignItems: "center"
         }}
       >
-        <Collaborator collaborator={collaborators[id]} />
+        <Collaborator
+          collaborator={collaborators[id]}
+          addCollaborator={addCollaborator}
+        />
 
         <div
           css={{
@@ -98,7 +118,7 @@ function ChartView({ ceoName, companyName }) {
         >
           {collaborators[id].children.map(childId => renderChildren(childId))}
         </div>
-      </section>
+      </div>
     );
   }
 

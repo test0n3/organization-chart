@@ -2,10 +2,11 @@
 import React from "react";
 import { jsx } from "@emotion/core";
 
-function InputCollaborator({ onCreate }) {
+function InputCollaborator({ onCreate, parent }) {
   // onCreate function that handles the created collaborator and appends it to Collaborator's array
 
-  const [collaboratorData, setCollaboratorData] = React.useState("");
+  const [name, setName] = React.useState("");
+  const [position, setPosition] = React.useState("");
   const [isDialogOpen, setIsDialogOpen] = React.useState(false);
 
   function handleOpenClick(event) {
@@ -18,15 +19,27 @@ function InputCollaborator({ onCreate }) {
     event.target.blur();
   }
 
-  function handleChange(event) {
-    setCollaboratorData(event.target.value); /* Catch data from form */
+  function handleNameChange(event) {
+    setName(event.target.value); /* Catch data from form */
+  }
+
+  function handlePositionChange(event) {
+    setPosition(event.target.value); /* Catch data from form */
   }
 
   function handleSubmit(event) {
     event.preventDefault();
+    const collaboratorData = {
+      name: name,
+      position: position,
+      parent: parent,
+      children: []
+    };
+
     onCreate(collaboratorData); // passed function that catches Collaborator's Data
     setIsDialogOpen(false);
-    setCollaboratorData(""); // Clear form
+    setName(""); // Clear form
+    setPosition("");
   }
 
   return (
@@ -126,7 +139,7 @@ function InputCollaborator({ onCreate }) {
                   type="text"
                   placeholder="Collaborator's name"
                   required
-                  onChange={handleChange}
+                  onChange={handleNameChange}
                   css={{
                     border: "1px solid #000000",
                     borderRadius: 5,
@@ -153,7 +166,7 @@ function InputCollaborator({ onCreate }) {
                   type="text"
                   placeholder="Collaborator's position"
                   required
-                  onChange={handleChange}
+                  onChange={handlePositionChange}
                   css={{
                     border: "1px solid #000000",
                     borderRadius: 5,
