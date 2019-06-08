@@ -8,6 +8,9 @@ function InputCompanyName(props) {
   return (
     <form onSubmit={handleTextChange}>
       <input
+      css={{
+
+      }}
         name="company"
         type="text"
         placeholder="Company's name..."
