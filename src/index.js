@@ -15,8 +15,9 @@ function App() {
   }
   if (!companyName) {
     return <CompanyName onCompany={handleCompanyName}/>;
-  } // return formCompany }
-  return <Chart />;
+  } else {
+    return <Chart />;
+  }
 }
 
 const $root = document.getElementById('root');
