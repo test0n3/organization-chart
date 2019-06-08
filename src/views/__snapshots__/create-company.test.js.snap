@@ -3,10 +3,11 @@
 exports[`Create Company component 1`] = `
 <DocumentFragment>
   <div
-    class="css-3aotth-CompanyName"
+    class="css-3n424c-CompanyName"
   >
     <form>
       <input
+        css="[object Object]"
         name="company"
         placeholder="Company's name..."
         type="text"
