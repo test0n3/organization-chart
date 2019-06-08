@@ -35,7 +35,8 @@ function ChartView({ ceoName, companyName }) {
           }}
         >
           {collaborators[id].parent}
-          {collaborators[id].id}
+          {collaborators[id].id} <br />
+          {collaborators[id].name}
         </div>
 
         <div
