@@ -1,12 +1,17 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Create Company component 1`] = `
+exports[`Create Company component with CSS  1`] = `
 <DocumentFragment>
-  <div>
-    <form>
+  <div
+    class="css-3n424c-CompanyName"
+  >
+    <form
+      class="css-1s4v5s4-InputCompanyName"
+    >
       <input
+        class="css-1rqyb0g-InputCompanyName"
         name="company"
-        placeholder="Company's name..."
+        placeholder="Company's name"
         type="text"
       />
     </form>
