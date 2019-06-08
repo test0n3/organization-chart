@@ -1,4 +1,6 @@
-import React from "react";
+/** @jsx jsx */
+import React from 'react';
+import { jsx } from "@emotion/core";
 
 function InputNameCeo(props) {
   function handleTextChange(event) {
@@ -6,11 +8,34 @@ function InputNameCeo(props) {
     props.onCeo(event.target.elements.ceo.value);
   }
   return (
-    <div>
-      <form onSubmit={handleTextChange}>
-        <input name="ceo" type="text" placeholder="Ceo's name..." required />
-      </form>
-    </div>
+  <div>
+    <form css={{
+      display: "flex",
+      flexDirection: "column",
+      width: "400px",
+      boxShadow: "0 20px 25px -5px rgba(0, 0, 0, 0.5)",
+      padding: "1.5em",
+      background: "rgba(22, 22, 22, 0.57)",
+      borderRadius: "0.5em"
+    }}
+    onSubmit={handleTextChange}>
+      <input 
+      css={{
+        fontSize: "20px",
+        padding: "10px",
+        borderRadius: "4px",
+        outline: "none",
+        border: "none",
+        borderBottom: "1px solid #ddd",
+        width: "calc(100% - 10px - 10px)",
+        textAlign: "center"
+      }}
+      name="ceo"
+      type="text"
+      placeholder="Ceo's Name"
+      />
+    </form>
+    </div>  
   );
 }
 

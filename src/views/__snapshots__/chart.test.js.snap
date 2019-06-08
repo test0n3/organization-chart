@@ -3,92 +3,110 @@
 exports[`ChartView component 1`] = `
 <DocumentFragment>
   <div>
-    <section>
+    <section
+      class="css-dvxtzn"
+    >
       <div
         class="css-rcxkfs"
       >
         0
       </div>
       <div
-        class="css-1xhj18k"
+        class="css-p58oka"
       >
-        <section>
+        <section
+          class="css-dvxtzn"
+        >
           <div
             class="css-rcxkfs"
           >
             01
           </div>
           <div
-            class="css-1xhj18k"
+            class="css-p58oka"
           />
         </section>
-        <section>
+        <section
+          class="css-dvxtzn"
+        >
           <div
             class="css-rcxkfs"
           >
             02
           </div>
           <div
-            class="css-1xhj18k"
+            class="css-p58oka"
           >
-            <section>
+            <section
+              class="css-dvxtzn"
+            >
               <div
                 class="css-rcxkfs"
               >
                 27
               </div>
               <div
-                class="css-1xhj18k"
+                class="css-p58oka"
               />
             </section>
-            <section>
+            <section
+              class="css-dvxtzn"
+            >
               <div
                 class="css-rcxkfs"
               >
                 28
               </div>
               <div
-                class="css-1xhj18k"
+                class="css-p58oka"
               />
             </section>
           </div>
         </section>
-        <section>
+        <section
+          class="css-dvxtzn"
+        >
           <div
             class="css-rcxkfs"
           >
             03
           </div>
           <div
-            class="css-1xhj18k"
+            class="css-p58oka"
           >
-            <section>
+            <section
+              class="css-dvxtzn"
+            >
               <div
                 class="css-rcxkfs"
               >
                 34
               </div>
               <div
-                class="css-1xhj18k"
+                class="css-p58oka"
               >
-                <section>
+                <section
+                  class="css-dvxtzn"
+                >
                   <div
                     class="css-rcxkfs"
                   >
                     45
                   </div>
                   <div
-                    class="css-1xhj18k"
+                    class="css-p58oka"
                   />
                 </section>
-                <section>
+                <section
+                  class="css-dvxtzn"
+                >
                   <div
                     class="css-rcxkfs"
                   >
                     46
                   </div>
                   <div
-                    class="css-1xhj18k"
+                    class="css-p58oka"
                   />
                 </section>
               </div>
