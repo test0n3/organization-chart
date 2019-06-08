@@ -6,7 +6,6 @@ import Collaborator from "../components/collaborator";
 const testData = [
   {
     id: 1,
-    name: "Mayra",
     name: "Mayra Navarro",
     position: "Product Manager",
     parent: 0,
@@ -21,7 +20,6 @@ const testData = [
   },
   {
     id: 3,
-    name: "xyz",
     name: "Ricardo Yrupailla",
     position: "Tech Lead",
     parent: 0,
@@ -29,7 +27,6 @@ const testData = [
   },
   {
     id: 4,
-    name: "xyz",
     name: "Diego Cuevas",
     position: "Tech Lead",
     parent: 3,
@@ -37,7 +34,6 @@ const testData = [
   },
   {
     id: 5,
-    name: "xyz",
     name: "Christopher Roa",
     position: "Tech Lead",
     parent: 4,
@@ -45,7 +41,6 @@ const testData = [
   },
   {
     id: 6,
-    name: "xyz",
     name: "Frank Condezo",
     position: "Tech Lead",
     parent: 4,
@@ -53,7 +48,6 @@ const testData = [
   },
   {
     id: 7,
-    name: "xyz",
     name: "Cristian Granda",
     position: "Tech Lead",
     parent: 2,
@@ -61,7 +55,6 @@ const testData = [
   },
   {
     id: 8,
-    name: "xyz",
     name: "Cesar Cachay",
     position: "Tech Lead",
     parent: 2,
