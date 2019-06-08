@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Create Company component 1`] = `
+<DocumentFragment>
+  <div>
+    <form>
+      <input
+        name="company"
+        placeholder="Company's name..."
+        type="text"
+      />
+    </form>
+  </div>
+</DocumentFragment>
+`;
