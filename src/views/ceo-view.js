@@ -19,7 +19,7 @@ function CeoName({onCeo}) {
       fontFamily: "Noto Sans",
       backgroundImage: `url(${Background2})`,
       backgroundBlendMode: "overlay",
-      backgroundRepeat: "no-repeat"
+      backgroundRepeat: "no-repeat",
       }}
     >
         <InputNameCeo onCeo={onCeo} />

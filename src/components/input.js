@@ -9,7 +9,7 @@ function InputNameCeo(props) {
   }
 
   const breakpoints = [320, 375, 425, 768];
-  const mq = breakpoints.map(bp => `@media (min-width: ${bp}px)`); 
+  const mq = breakpoints.map(bp => `@media (max-width: ${bp}px)`); 
 
   return (
   <div>

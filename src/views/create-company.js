@@ -18,7 +18,10 @@ function CompanyName({ onCompany }) {
       fontFamily: "Noto Sans",
       backgroundImage: `url(${Background})`,
       backgroundBlendMode: "overlay",
-      backgroundRepeat: "no-repeat"
+      backgroundRepeat: "no-repeat",
+      '@media (max-width: 960px)':{
+      backgroundPosition: '50%'
+      }
       }}
     >
       <InputCompanyName setCompanyName={onCompany} />
