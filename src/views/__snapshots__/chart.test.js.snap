@@ -3,7 +3,7 @@
 exports[`ChartView component 1`] = `
 <DocumentFragment>
   <div>
-    <section
+    <div
       class="css-dvxtzn"
     >
       <article
@@ -30,7 +30,7 @@ exports[`ChartView component 1`] = `
       <div
         class="css-p58oka"
       >
-        <section
+        <div
           class="css-dvxtzn"
         >
           <article
@@ -59,8 +59,8 @@ exports[`ChartView component 1`] = `
           <div
             class="css-p58oka"
           />
-        </section>
-        <section
+        </div>
+        <div
           class="css-dvxtzn"
         >
           <article
@@ -89,7 +89,7 @@ exports[`ChartView component 1`] = `
           <div
             class="css-p58oka"
           >
-            <section
+            <div
               class="css-dvxtzn"
             >
               <article
@@ -118,8 +118,8 @@ exports[`ChartView component 1`] = `
               <div
                 class="css-p58oka"
               />
-            </section>
-            <section
+            </div>
+            <div
               class="css-dvxtzn"
             >
               <article
@@ -148,10 +148,10 @@ exports[`ChartView component 1`] = `
               <div
                 class="css-p58oka"
               />
-            </section>
+            </div>
           </div>
-        </section>
-        <section
+        </div>
+        <div
           class="css-dvxtzn"
         >
           <article
@@ -180,7 +180,7 @@ exports[`ChartView component 1`] = `
           <div
             class="css-p58oka"
           >
-            <section
+            <div
               class="css-dvxtzn"
             >
               <article
@@ -209,7 +209,7 @@ exports[`ChartView component 1`] = `
               <div
                 class="css-p58oka"
               >
-                <section
+                <div
                   class="css-dvxtzn"
                 >
                   <article
@@ -238,8 +238,8 @@ exports[`ChartView component 1`] = `
                   <div
                     class="css-p58oka"
                   />
-                </section>
-                <section
+                </div>
+                <div
                   class="css-dvxtzn"
                 >
                   <article
@@ -268,13 +268,13 @@ exports[`ChartView component 1`] = `
                   <div
                     class="css-p58oka"
                   />
-                </section>
+                </div>
               </div>
-            </section>
+            </div>
           </div>
-        </section>
+        </div>
       </div>
-    </section>
+    </div>
   </div>
 </DocumentFragment>
 `;

@@ -4,9 +4,7 @@ import { jsx } from "@emotion/core";
 
 import InputCollaborator from "./input-collaborator";
 
-const collaborator = ({ collaborator }) => {
-  function handleCollaborator(newCollaborator) {}
-
+const collaborator = ({ collaborator, addCollaborator }) => {
   return (
     <article
       css={{
@@ -50,7 +48,10 @@ const collaborator = ({ collaborator }) => {
         {collaborator.position}
       </p>
       <p css={{ textAlign: "right", padding: 0, margin: 0 }}>
-        <InputCollaborator onCreate={handleCollaborator} />
+        <InputCollaborator
+          onCreate={addCollaborator}
+          parent={collaborator.id}
+        />
       </p>
     </article>
   );
