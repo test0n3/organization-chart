@@ -21,6 +21,7 @@ function InputCompanyName(props) {
       onSubmit={handleTextChange}
     >
       <input
+        aria-label="Company's name"
         css={{
           fontSize: "20px",
           padding: "10px",
@@ -31,6 +32,7 @@ function InputCompanyName(props) {
           width: "calc(100% - 10px - 10px)",
           textAlign: "center"
         }}
+        autoFocus
         name="company"
         type="text"
         placeholder="Company's name"
