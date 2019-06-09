@@ -10,6 +10,7 @@ exports[`CeoName component 1`] = `
         class="css-11qy8o7-InputNameCeo"
       >
         <input
+          aria-label="CEO name"
           class="css-lrjsfw-InputNameCeo"
           name="ceo"
           placeholder="Ceo's Name"

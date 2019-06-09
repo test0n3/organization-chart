@@ -9,6 +9,7 @@ exports[`Create Company component with CSS  1`] = `
       class="css-1s4v5s4-InputCompanyName"
     >
       <input
+        aria-label="Company's name"
         class="css-1rqyb0g-InputCompanyName"
         name="company"
         placeholder="Company's name"
