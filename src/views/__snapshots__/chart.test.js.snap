@@ -7,18 +7,22 @@ exports[`ChartView component 1`] = `
       class="css-dvxtzn"
     >
       <article
-        class="css-5c5px"
+        class="css-1cp7u4q"
       >
+        <header
+          class="css-1dn0xi0"
+        >
+          <h2
+            class="css-1gl3xas"
+          >
+            CEO
+          </h2>
+        </header>
         <p
-          class="css-1kebmcj"
+          class="css-1m38isb"
         />
         <p
-          class="css-197a6t6"
-        >
-          CEO
-        </p>
-        <p
-          class="css-ub9u27"
+          class="css-1m413xu"
         >
           <button
             class="css-1b02a2r-InputCollaborator"
@@ -34,20 +38,24 @@ exports[`ChartView component 1`] = `
           class="css-dvxtzn"
         >
           <article
-            class="css-5c5px"
+            class="css-1cp7u4q"
           >
+            <header
+              class="css-1dn0xi0"
+            >
+              <h2
+                class="css-1gl3xas"
+              >
+                Product Manager
+              </h2>
+            </header>
             <p
-              class="css-1kebmcj"
+              class="css-1m38isb"
             >
               Mayra Navarro
             </p>
             <p
-              class="css-197a6t6"
-            >
-              Product Manager
-            </p>
-            <p
-              class="css-ub9u27"
+              class="css-1m413xu"
             >
               <button
                 class="css-1b02a2r-InputCollaborator"
@@ -64,20 +72,24 @@ exports[`ChartView component 1`] = `
           class="css-dvxtzn"
         >
           <article
-            class="css-5c5px"
+            class="css-1cp7u4q"
           >
+            <header
+              class="css-1dn0xi0"
+            >
+              <h2
+                class="css-1gl3xas"
+              >
+                Tech Lead
+              </h2>
+            </header>
             <p
-              class="css-1kebmcj"
+              class="css-1m38isb"
             >
               Deivy Conde
             </p>
             <p
-              class="css-197a6t6"
-            >
-              Tech Lead
-            </p>
-            <p
-              class="css-ub9u27"
+              class="css-1m413xu"
             >
               <button
                 class="css-1b02a2r-InputCollaborator"
@@ -93,20 +105,24 @@ exports[`ChartView component 1`] = `
               class="css-dvxtzn"
             >
               <article
-                class="css-5c5px"
+                class="css-1cp7u4q"
               >
+                <header
+                  class="css-1dn0xi0"
+                >
+                  <h2
+                    class="css-1gl3xas"
+                  >
+                    Tech Lead
+                  </h2>
+                </header>
                 <p
-                  class="css-1kebmcj"
+                  class="css-1m38isb"
                 >
                   Cristian Granda
                 </p>
                 <p
-                  class="css-197a6t6"
-                >
-                  Tech Lead
-                </p>
-                <p
-                  class="css-ub9u27"
+                  class="css-1m413xu"
                 >
                   <button
                     class="css-1b02a2r-InputCollaborator"
@@ -123,20 +139,24 @@ exports[`ChartView component 1`] = `
               class="css-dvxtzn"
             >
               <article
-                class="css-5c5px"
+                class="css-1cp7u4q"
               >
+                <header
+                  class="css-1dn0xi0"
+                >
+                  <h2
+                    class="css-1gl3xas"
+                  >
+                    Tech Lead
+                  </h2>
+                </header>
                 <p
-                  class="css-1kebmcj"
+                  class="css-1m38isb"
                 >
                   Cesar Cachay
                 </p>
                 <p
-                  class="css-197a6t6"
-                >
-                  Tech Lead
-                </p>
-                <p
-                  class="css-ub9u27"
+                  class="css-1m413xu"
                 >
                   <button
                     class="css-1b02a2r-InputCollaborator"
@@ -155,20 +175,24 @@ exports[`ChartView component 1`] = `
           class="css-dvxtzn"
         >
           <article
-            class="css-5c5px"
+            class="css-1cp7u4q"
           >
+            <header
+              class="css-1dn0xi0"
+            >
+              <h2
+                class="css-1gl3xas"
+              >
+                Tech Lead
+              </h2>
+            </header>
             <p
-              class="css-1kebmcj"
+              class="css-1m38isb"
             >
               Ricardo Yrupailla
             </p>
             <p
-              class="css-197a6t6"
-            >
-              Tech Lead
-            </p>
-            <p
-              class="css-ub9u27"
+              class="css-1m413xu"
             >
               <button
                 class="css-1b02a2r-InputCollaborator"
@@ -184,20 +208,24 @@ exports[`ChartView component 1`] = `
               class="css-dvxtzn"
             >
               <article
-                class="css-5c5px"
+                class="css-1cp7u4q"
               >
+                <header
+                  class="css-1dn0xi0"
+                >
+                  <h2
+                    class="css-1gl3xas"
+                  >
+                    Tech Lead
+                  </h2>
+                </header>
                 <p
-                  class="css-1kebmcj"
+                  class="css-1m38isb"
                 >
                   Diego Cuevas
                 </p>
                 <p
-                  class="css-197a6t6"
-                >
-                  Tech Lead
-                </p>
-                <p
-                  class="css-ub9u27"
+                  class="css-1m413xu"
                 >
                   <button
                     class="css-1b02a2r-InputCollaborator"
@@ -213,20 +241,24 @@ exports[`ChartView component 1`] = `
                   class="css-dvxtzn"
                 >
                   <article
-                    class="css-5c5px"
+                    class="css-1cp7u4q"
                   >
+                    <header
+                      class="css-1dn0xi0"
+                    >
+                      <h2
+                        class="css-1gl3xas"
+                      >
+                        Tech Lead
+                      </h2>
+                    </header>
                     <p
-                      class="css-1kebmcj"
+                      class="css-1m38isb"
                     >
                       Christopher Roa
                     </p>
                     <p
-                      class="css-197a6t6"
-                    >
-                      Tech Lead
-                    </p>
-                    <p
-                      class="css-ub9u27"
+                      class="css-1m413xu"
                     >
                       <button
                         class="css-1b02a2r-InputCollaborator"
@@ -243,20 +275,24 @@ exports[`ChartView component 1`] = `
                   class="css-dvxtzn"
                 >
                   <article
-                    class="css-5c5px"
+                    class="css-1cp7u4q"
                   >
+                    <header
+                      class="css-1dn0xi0"
+                    >
+                      <h2
+                        class="css-1gl3xas"
+                      >
+                        Tech Lead
+                      </h2>
+                    </header>
                     <p
-                      class="css-1kebmcj"
+                      class="css-1m38isb"
                     >
                       Frank Condezo
                     </p>
                     <p
-                      class="css-197a6t6"
-                    >
-                      Tech Lead
-                    </p>
-                    <p
-                      class="css-ub9u27"
+                      class="css-1m413xu"
                     >
                       <button
                         class="css-1b02a2r-InputCollaborator"

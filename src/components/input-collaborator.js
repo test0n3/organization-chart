@@ -110,7 +110,10 @@ function InputCollaborator({ onCreate, parent }) {
                 perspectiveOrigin: "0 0",
                 textAlign: "center",
                 width: 20,
-                height: 20
+                height: 20,
+                "&:hover": {
+                  backgroundColor: "#999999"
+                }
               }}
               onClick={handleCloseClick}
             >
@@ -137,7 +140,7 @@ function InputCollaborator({ onCreate, parent }) {
                   name="collabName"
                   id="collabName"
                   type="text"
-                  placeholder="Collaborator's name"
+                  placeholder="e.g.: John Smith"
                   required
                   onChange={handleNameChange}
                   css={{
@@ -164,7 +167,7 @@ function InputCollaborator({ onCreate, parent }) {
                   name="collabPosition"
                   id="collabPosition"
                   type="text"
-                  placeholder="Collaborator's position"
+                  placeholder="e.g.: Help desk director"
                   required
                   onChange={handlePositionChange}
                   css={{
@@ -189,7 +192,10 @@ function InputCollaborator({ onCreate, parent }) {
                   fontWeight: "500",
                   textTransform: "uppercase",
                   outline: "none",
-                  marginTop: 20
+                  marginTop: 20,
+                  "&:hover": {
+                    backgroundColor: "#999999"
+                  }
                 }}
                 type="submit"
               >
