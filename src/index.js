@@ -3,6 +3,7 @@ import { render } from "react-dom";
 import CompanyName from "./views/create-company";
 import ChartView from "./views/chart";
 import CeoName from "./views/ceo-view";
+import ChartHeader from "./views/chart-header";
 
 function App() {
   const [companyName, setCompanyName] = React.useState(
@@ -26,7 +27,12 @@ function App() {
   } else if (!ceoName) {
     return <CeoName onCeo={handleCeoName} />;
   } else {
-    return <ChartView ceoName={ceoName} companyName={companyName} />;
+    return (
+      <>
+        <ChartHeader companyName={companyName} />
+        <ChartView ceoName={ceoName} companyName={companyName} />
+      </>
+    );
   }
 }
 
