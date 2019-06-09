@@ -20,7 +20,7 @@ function CompanyName({ onCompany }) {
         backgroundBlendMode: "overlay",
         backgroundRepeat: "no-repeat",
         "@media (max-width: 960px)": {
-          backgroundPosition: "50%"
+          backgroundPosition: "90%"
         }
       }}
     >
