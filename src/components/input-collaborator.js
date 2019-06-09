@@ -45,6 +45,8 @@ function InputCollaborator({ onCreate, parent }) {
   return (
     <>
       <button
+        aria-label="Open add collaborator dialog"
+        type="button"
         css={{
           borderRadius: "50%",
           border: "1px solid #000",
@@ -97,6 +99,7 @@ function InputCollaborator({ onCreate, parent }) {
             }}
           >
             <button
+              aria-label="Close add collaborator dialog"
               css={{
                 position: "absolute",
                 right: "1rem",
@@ -110,7 +113,10 @@ function InputCollaborator({ onCreate, parent }) {
                 perspectiveOrigin: "0 0",
                 textAlign: "center",
                 width: 20,
-                height: 20
+                height: 20,
+                "&:hover": {
+                  backgroundColor: "#999999"
+                }
               }}
               onClick={handleCloseClick}
             >
@@ -134,12 +140,14 @@ function InputCollaborator({ onCreate, parent }) {
                   Collaborator's Name
                 </p>
                 <input
+                  aria-label="Collaborator's name"
                   name="collabName"
                   id="collabName"
                   type="text"
-                  placeholder="Collaborator's name"
+                  placeholder="e.g.: John Smith"
                   required
                   onChange={handleNameChange}
+                  autoFocus
                   css={{
                     border: "1px solid #000000",
                     borderRadius: 5,
@@ -161,10 +169,11 @@ function InputCollaborator({ onCreate, parent }) {
                   Collaborator's Position
                 </p>
                 <input
+                  aria-label="Collaborator's position"
                   name="collabPosition"
                   id="collabPosition"
                   type="text"
-                  placeholder="Collaborator's position"
+                  placeholder="e.g.: Help desk director"
                   required
                   onChange={handlePositionChange}
                   css={{
@@ -177,6 +186,7 @@ function InputCollaborator({ onCreate, parent }) {
                 />
               </label>
               <button
+                aria-label="Submit collaborator data"
                 css={{
                   backgroundColor: "#FFFFFF",
                   borderRadius: ".5rem",
@@ -189,7 +199,10 @@ function InputCollaborator({ onCreate, parent }) {
                   fontWeight: "500",
                   textTransform: "uppercase",
                   outline: "none",
-                  marginTop: 20
+                  marginTop: 20,
+                  "&:hover": {
+                    backgroundColor: "#999999"
+                  }
                 }}
                 type="submit"
               >

@@ -3,65 +3,6 @@ import React from "react";
 import { jsx } from "@emotion/core";
 import Collaborator from "../components/collaborator";
 
-const testData = [
-  {
-    id: 1,
-    name: "Mayra Navarro",
-    position: "Product Manager",
-    parent: 0,
-    children: []
-  },
-  {
-    id: 2,
-    name: "Deivy Conde",
-    position: "Tech Lead",
-    parent: 0,
-    children: [7, 8]
-  },
-  {
-    id: 3,
-    name: "Ricardo Yrupailla",
-    position: "Tech Lead",
-    parent: 0,
-    children: [4]
-  },
-  {
-    id: 4,
-    name: "Diego Cuevas",
-    position: "Tech Lead",
-    parent: 3,
-    children: [5, 6]
-  },
-  {
-    id: 5,
-    name: "Christopher Roa",
-    position: "Tech Lead",
-    parent: 4,
-    children: []
-  },
-  {
-    id: 6,
-    name: "Frank Condezo",
-    position: "Tech Lead",
-    parent: 4,
-    children: []
-  },
-  {
-    id: 7,
-    name: "Cristian Granda",
-    position: "Tech Lead",
-    parent: 2,
-    children: []
-  },
-  {
-    id: 8,
-    name: "Cesar Cachay",
-    position: "Tech Lead",
-    parent: 2,
-    children: []
-  }
-];
-
 function ChartView({ ceoName, companyName }) {
   const initialCollaborators = JSON.parse(
     localStorage.getItem("collaborators") ||
@@ -71,9 +12,8 @@ function ChartView({ ceoName, companyName }) {
           name: ceoName,
           position: "CEO",
           parent: "",
-          children: [1, 2, 3]
-        },
-        ...testData
+          children: []
+        }
       ])
   );
 

@@ -7,21 +7,27 @@ exports[`ChartView component 1`] = `
       class="css-dvxtzn"
     >
       <article
-        class="css-5c5px"
+        class="0 css-1cp7u4q"
       >
+        <header
+          class="css-1dn0xi0"
+        >
+          <h2
+            class="css-1gl3xas"
+          >
+            CEO
+          </h2>
+        </header>
         <p
-          class="css-1kebmcj"
+          class="css-1m38isb"
         />
         <p
-          class="css-197a6t6"
-        >
-          CEO
-        </p>
-        <p
-          class="css-ub9u27"
+          class="css-1m413xu"
         >
           <button
+            aria-label="Open add collaborator dialog"
             class="css-1b02a2r-InputCollaborator"
+            type="button"
           >
             +
           </button>
@@ -29,251 +35,7 @@ exports[`ChartView component 1`] = `
       </article>
       <div
         class="css-p58oka"
-      >
-        <div
-          class="css-dvxtzn"
-        >
-          <article
-            class="css-5c5px"
-          >
-            <p
-              class="css-1kebmcj"
-            >
-              Mayra Navarro
-            </p>
-            <p
-              class="css-197a6t6"
-            >
-              Product Manager
-            </p>
-            <p
-              class="css-ub9u27"
-            >
-              <button
-                class="css-1b02a2r-InputCollaborator"
-              >
-                +
-              </button>
-            </p>
-          </article>
-          <div
-            class="css-p58oka"
-          />
-        </div>
-        <div
-          class="css-dvxtzn"
-        >
-          <article
-            class="css-5c5px"
-          >
-            <p
-              class="css-1kebmcj"
-            >
-              Deivy Conde
-            </p>
-            <p
-              class="css-197a6t6"
-            >
-              Tech Lead
-            </p>
-            <p
-              class="css-ub9u27"
-            >
-              <button
-                class="css-1b02a2r-InputCollaborator"
-              >
-                +
-              </button>
-            </p>
-          </article>
-          <div
-            class="css-p58oka"
-          >
-            <div
-              class="css-dvxtzn"
-            >
-              <article
-                class="css-5c5px"
-              >
-                <p
-                  class="css-1kebmcj"
-                >
-                  Cristian Granda
-                </p>
-                <p
-                  class="css-197a6t6"
-                >
-                  Tech Lead
-                </p>
-                <p
-                  class="css-ub9u27"
-                >
-                  <button
-                    class="css-1b02a2r-InputCollaborator"
-                  >
-                    +
-                  </button>
-                </p>
-              </article>
-              <div
-                class="css-p58oka"
-              />
-            </div>
-            <div
-              class="css-dvxtzn"
-            >
-              <article
-                class="css-5c5px"
-              >
-                <p
-                  class="css-1kebmcj"
-                >
-                  Cesar Cachay
-                </p>
-                <p
-                  class="css-197a6t6"
-                >
-                  Tech Lead
-                </p>
-                <p
-                  class="css-ub9u27"
-                >
-                  <button
-                    class="css-1b02a2r-InputCollaborator"
-                  >
-                    +
-                  </button>
-                </p>
-              </article>
-              <div
-                class="css-p58oka"
-              />
-            </div>
-          </div>
-        </div>
-        <div
-          class="css-dvxtzn"
-        >
-          <article
-            class="css-5c5px"
-          >
-            <p
-              class="css-1kebmcj"
-            >
-              Ricardo Yrupailla
-            </p>
-            <p
-              class="css-197a6t6"
-            >
-              Tech Lead
-            </p>
-            <p
-              class="css-ub9u27"
-            >
-              <button
-                class="css-1b02a2r-InputCollaborator"
-              >
-                +
-              </button>
-            </p>
-          </article>
-          <div
-            class="css-p58oka"
-          >
-            <div
-              class="css-dvxtzn"
-            >
-              <article
-                class="css-5c5px"
-              >
-                <p
-                  class="css-1kebmcj"
-                >
-                  Diego Cuevas
-                </p>
-                <p
-                  class="css-197a6t6"
-                >
-                  Tech Lead
-                </p>
-                <p
-                  class="css-ub9u27"
-                >
-                  <button
-                    class="css-1b02a2r-InputCollaborator"
-                  >
-                    +
-                  </button>
-                </p>
-              </article>
-              <div
-                class="css-p58oka"
-              >
-                <div
-                  class="css-dvxtzn"
-                >
-                  <article
-                    class="css-5c5px"
-                  >
-                    <p
-                      class="css-1kebmcj"
-                    >
-                      Christopher Roa
-                    </p>
-                    <p
-                      class="css-197a6t6"
-                    >
-                      Tech Lead
-                    </p>
-                    <p
-                      class="css-ub9u27"
-                    >
-                      <button
-                        class="css-1b02a2r-InputCollaborator"
-                      >
-                        +
-                      </button>
-                    </p>
-                  </article>
-                  <div
-                    class="css-p58oka"
-                  />
-                </div>
-                <div
-                  class="css-dvxtzn"
-                >
-                  <article
-                    class="css-5c5px"
-                  >
-                    <p
-                      class="css-1kebmcj"
-                    >
-                      Frank Condezo
-                    </p>
-                    <p
-                      class="css-197a6t6"
-                    >
-                      Tech Lead
-                    </p>
-                    <p
-                      class="css-ub9u27"
-                    >
-                      <button
-                        class="css-1b02a2r-InputCollaborator"
-                      >
-                        +
-                      </button>
-                    </p>
-                  </article>
-                  <div
-                    class="css-p58oka"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      />
     </div>
   </div>
 </DocumentFragment>

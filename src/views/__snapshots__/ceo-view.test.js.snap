@@ -7,9 +7,10 @@ exports[`CeoName component 1`] = `
   >
     <div>
       <form
-        class="css-xctk3t-InputNameCeo"
+        class="css-11qy8o7-InputNameCeo"
       >
         <input
+          aria-label="CEO name"
           class="css-lrjsfw-InputNameCeo"
           name="ceo"
           placeholder="Ceo's Name"
